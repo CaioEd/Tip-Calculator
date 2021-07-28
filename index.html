@@ -14,13 +14,13 @@
             <p>Conta</p>
             <input type="number" name="conta" id="conta" placeholder="R$">
             <p>Porcentagem</p>
-            <button>5%</button>
-            <button>10%</button>
-            <button>15%</button>
+            <button onclick="calc()" class="btnPorcentagem">5%</button>
+            <button onclick="calc()" class="btnPorcentagem">10%</button>
+            <button onclick="calc()" class="btnPorcentagem">15%</button>
             <br>
-            <button>25%</button>
-            <button>50%</button>
-            <input type="number" name="numPorcentagem" id="numPorcentagem">
+            <button onclick="calc()" class="btnPorcentagem">25%</button>
+            <button onclick="calc()" class="btnPorcentagem">50%</button>
+            <input type="number" name="numPorcentagem" id="numPorcentagem" placeholder="%">
             <p>Número de pessoas</p>
             <input type="number" name="pessoas" id="pessoas">
         </div>
@@ -28,8 +28,10 @@
         <div id="resultados">
             <p>Gorjeta <span id="resGorjeta">R$0.00</span> <br> /pessoa</p>
             <p>Total <span id="resTotal">R$0.00</span></p>
-            <button>LIMPAR TELA</button>
+            <button id="btnLimpar">LIMPAR TELA</button>
         </div>
     </main>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
