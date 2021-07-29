@@ -97,3 +97,7 @@ main button:hover{
 #resultados button:hover{
     filter: brightness(1.2);
 }
+
+#calc{
+    margin-bottom: 1rem;
+}

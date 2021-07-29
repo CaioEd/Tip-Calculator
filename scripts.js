@@ -7,6 +7,8 @@ const btnPorcentagem = document.querySelectorAll('.btnPorcentagem')
 const numPessoas = document.querySelector('#pessoas')
 const numPessoasNum = Number(numPessoas)
 
+const btnCalc = document.querySelector('#calc')
+
 const resGorjeta = document.querySelector('#resGorjeta')
 const resTotal = document.querySelector('#resTotal')
 const btnLimpar = document.querySelector('#btnLimpar')
@@ -45,7 +47,10 @@ const calc = () =>{
 
         alert('Informações inválidas!')
     }
+   
 }
+
+btnCalc.addEventListener('click', calc)
 
 const limpar = () =>{
     conta.value = ''

@@ -13,16 +13,20 @@
         <div id="calculadora">
             <p>Conta</p>
             <input type="number" name="conta" id="conta" placeholder="R$">
+
             <p>Porcentagem</p>
-            <button onclick="calc()" class="btnPorcentagem">5%</button>
-            <button onclick="calc()" class="btnPorcentagem">10%</button>
-            <button onclick="calc()" class="btnPorcentagem">15%</button>
+            <button class="btnPorcentagem">5%</button>
+            <button class="btnPorcentagem">10%</button>
+            <button class="btnPorcentagem">15%</button>
             <br>
-            <button onclick="calc()" class="btnPorcentagem">25%</button>
-            <button onclick="calc()" class="btnPorcentagem">50%</button>
+            <button class="btnPorcentagem">25%</button>
+            <button class="btnPorcentagem">50%</button>
+
             <input type="number" name="numPorcentagem" id="numPorcentagem" placeholder="%">
             <p>Número de pessoas</p>
             <input type="number" name="pessoas" id="pessoas">
+            <br>
+            <button id="calc">Calcular</button>
         </div>
 
         <div id="resultados">
@@ -30,6 +34,8 @@
             <p>Total <span id="resTotal">R$0.00</span></p>
             <button id="btnLimpar">LIMPAR TELA</button>
         </div>
+
+        
     </main>
 
     <script src="scripts.js"></script>
