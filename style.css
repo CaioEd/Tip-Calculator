@@ -51,6 +51,14 @@ main button:hover{
     margin-left: 1rem;
 }
 
+#selectPorcentagem{
+    width: 12rem;
+    height: 3rem;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.555);
+    font-size: 1.8rem;
+}
+
 #calculadora input{
     width: 12rem;
     height: 3rem;
@@ -58,7 +66,7 @@ main button:hover{
     border-radius: 8px;
     border: 1px solid rgba(0, 0, 0, 0.555);
     text-align: center;
-    margin-bottom: 2em;
+    margin-bottom: 2rem;
     text-align: right;
 }
 

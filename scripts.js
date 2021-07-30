@@ -1,8 +1,8 @@
 const conta = document.querySelector('#conta')
 const contaNum = Number(conta)
 
+const selectPorcent = document.querySelector('#selectPorcentagem')
 const numPorcentagem = document.querySelector('#numPorcentagem')
-const btnPorcentagem = document.querySelectorAll('.btnPorcentagem')
 
 const numPessoas = document.querySelector('#pessoas')
 const numPessoasNum = Number(numPessoas)
