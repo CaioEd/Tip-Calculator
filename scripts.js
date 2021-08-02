@@ -1,12 +1,9 @@
 const conta = document.querySelector('#conta')
-const contaNum = Number(conta)
 
 const selectPorcent = document.querySelector('#selectPorcentagem')
-const numPorcentagem = document.querySelector('#numPorcentagem')
 
 const numPessoas = document.querySelector('#pessoas')
-const numPessoasNum = Number(numPessoas)
-
+        
 const btnCalc = document.querySelector('#calc')
 
 const resGorjeta = document.querySelector('#resGorjeta')
@@ -14,7 +11,6 @@ const resTotal = document.querySelector('#resTotal')
 const btnLimpar = document.querySelector('#btnLimpar')
 
 const calc = () =>{
-
     conta.style.border = '1px solid rgba(0, 0, 0, 0.555)'
     numPessoas.style.border = '1px solid rgba(0, 0, 0, 0.555)'
 
@@ -47,14 +43,18 @@ const calc = () =>{
 
         alert('Informações inválidas!')
     }
-   
+
+    const res1 = (selectPorcent.value/100)*conta.value
+    const res2 = res1/numPessoas.value
+
+    resGorjeta.innerHTML = (`R$${res2}`)
+    resTotal.innerHTML = (`R$${res1}`)
 }
 
 btnCalc.addEventListener('click', calc)
 
 const limpar = () =>{
     conta.value = ''
-    numPorcentagem.value = ''
     numPessoas.value = ''
 
     resGorjeta.innerHTML = (`R$0.00`)
