@@ -47,8 +47,8 @@ const calc = () =>{
     const res1 = (selectPorcent.value/100)*conta.value
     const res2 = res1/numPessoas.value
 
-    resGorjeta.innerHTML = (`R$${res2}`)
-    resTotal.innerHTML = (`R$${res1}`)
+    resGorjeta.innerHTML = (`R$${res2.toFixed(2)}`)
+    resTotal.innerHTML = (`R$${res1.toFixed(2)}`)
 }
 
 btnCalc.addEventListener('click', calc)
