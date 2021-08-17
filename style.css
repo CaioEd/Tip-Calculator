@@ -99,3 +99,33 @@ main button:hover{
 #resultados button:hover{
     filter: brightness(1.2);
 }
+
+/* MEDIAS */ 
+@media (max-width:530px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 94vh;
+    }
+
+    #calculadora{
+        margin: auto;
+    }
+
+    #resultados{
+        margin: auto;
+    }
+}
+
+@media (max-width:320px){
+    #resultados{
+        width: 70%;
+        font-size: .5rem;
+    }
+
+    #resultados button{
+        width: 15rem;
+        height: 3rem;
+    }
+
+}    
